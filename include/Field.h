@@ -21,6 +21,9 @@ public:
     // Конструктор перемещенния
     GameField(int width, int height, ShipManager&& shipManager);
 
+    //деструктор
+    ~GameField();
+
 
     bool placeShip(Ship&& ship, int x, int y, Ship::Orientation orientation);
     bool attackCell(int x, int y);
